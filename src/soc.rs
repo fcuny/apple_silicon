@@ -4,9 +4,13 @@ use std::process::Command;
 
 pub type Result<T> = std::result::Result<T, Error>;
 
+/// Information about the Silicon chip
 pub struct SocInfo {
+    /// The CPU brand name string
     pub cpu_brand_name: String,
+    /// Number of CPU cores
     pub num_cpu_cores: u16,
+    /// Number of GPU cores
     pub num_gpu_cores: u16,
 }
 
