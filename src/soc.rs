@@ -29,8 +29,10 @@ impl SocInfo {
 }
 
 // https://github.com/tlkh/asitop/blob/74ebe2cbc23d5b1eec874aebb1b9bacfe0e670cd/asitop/utils.py#L94
+const SYSCTL_PATH: &str = "/usr/sbin/sysctl";
+
 fn cpu_info() -> Result<(String, u16)> {
-    let binary = "/usr/sbin/sysctl";
+    let binary = SYSCTL_PATH;
     let args = &[
         // don't display the variable name
         "-n",
