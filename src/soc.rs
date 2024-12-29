@@ -141,8 +141,8 @@ impl SocInfo {
             gpu_max_power: Some(specs.gpu_tdp),
             cpu_max_bw: Some(specs.cpu_bw),
             gpu_max_bw: Some(specs.gpu_bw),
-            e_core_count: e_core_count,
-            p_core_count: p_core_count,
+            e_core_count,
+            p_core_count,
         })
     }
 }
