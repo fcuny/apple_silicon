@@ -15,4 +15,4 @@ name = "apple_silicon"
 path = "src/bin/apple_silicon.rs"
 
 [dependencies]
-thiserror = "1.0.61"
+thiserror = "2.0.9"
