@@ -1,8 +1,7 @@
-mod error;
-mod soc;
+use apple_silicon::soc::SocInfo;
 
 fn main() {
-    let cpu_info = soc::SocInfo::new().unwrap();
+    let cpu_info = SocInfo::new().unwrap();
     println!(
         "our CPU is an {}, and we have {} CPU cores, and {} GPU cores. The TDP is {}.",
         cpu_info.cpu_brand_name,
